@@ -39,6 +39,7 @@ app.get('/', (req, res) => {
         </body>
         </html>
       `);
+        console.log("Qr code gerado")
     });
   });
 
