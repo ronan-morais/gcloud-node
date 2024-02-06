@@ -5,8 +5,14 @@ import qrcode from 'qrcode';
 const { Client, LocalAuth } = pkg;
 
 const client = new Client({
-  authStrategy: new LocalAuth()
+  authStrategy: new LocalAuth(),
+  puppeteer: {
+    headless: true,
+    args: ['--no-sandbox'],
+    authStrategy: new LocalAuth()
+  }
 });
+
 
 
 const app = express();
