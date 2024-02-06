@@ -49,7 +49,7 @@ app.get('/', (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(8080, () => {
   console.log('Servidor rodando na porta 8080');
   client.initialize();
   console.log('cliente criado');
