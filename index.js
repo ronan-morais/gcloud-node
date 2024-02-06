@@ -2,8 +2,8 @@ import express from 'express';
 const app = express();
 
 app.get('/', (req, res) => {
-  const name = process.env.NAME || 'Mundo';
-  res.send(`Olá ${name}!!!`);
+  const name = process.env.NAME || 'Google Cloud';
+  res.send(`Hello ${name}!!!`);
 });
 
 const port = parseInt(process.env.PORT) || 8080;
